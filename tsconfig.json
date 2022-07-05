@@ -4,6 +4,8 @@
   ],
   "compilerOptions": {
     "declaration": true,
+    "declarationMap": true,
+    "baseUrl": "./",
     "outDir": "./lib",
     "strict": true,
     "removeComments": true,
