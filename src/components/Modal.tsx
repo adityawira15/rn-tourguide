@@ -38,6 +38,7 @@ export interface ModalProps {
   next: () => void
   prev: () => void
   preventOutsideInteraction?: boolean
+  modalStyle: StyleProp<ViewStyle>
 }
 
 interface Layout {
@@ -326,7 +327,7 @@ export class Modal extends React.Component<ModalProps, State> {
     }
     return (
       <View
-        style={[StyleSheet.absoluteFill, { backgroundColor: 'transparent' }]}
+        style={[StyleSheet.absoluteFill, { backgroundColor: 'transparent' }, this.props.modalStyle]}
         pointerEvents='box-none'
       >
         <View

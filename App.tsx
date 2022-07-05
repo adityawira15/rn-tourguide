@@ -21,7 +21,7 @@ const uri =
 // Add <TourGuideProvider/> at the root of you app!
 function App() {
   return (
-    <TourGuideProvider {...{ borderRadius: 16, androidStatusBarVisible: true }}>
+    <TourGuideProvider {...{ borderRadius: 0, androidStatusBarVisible: true }}>
       <AppContent />
     </TourGuideProvider>
   )
@@ -108,17 +108,6 @@ const AppContent = () => {
           },
         ]}
       />
-      {Platform.OS !== 'web' ? (
-        <TourGuideZoneByPosition
-          zone={1}
-          shape={'circle'}
-          isTourGuide
-          top={250}
-          left={50}
-          width={64}
-          height={64}
-        />
-      ) : null}
     </View>
   )
 }
