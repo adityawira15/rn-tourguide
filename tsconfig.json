@@ -3,8 +3,7 @@
     "src"
   ],
   "compilerOptions": {
-    "declaration": true,
-    "declarationMap": true,
+    "declaration": false,
     "baseUrl": "./",
     "outDir": "./lib",
     "strict": true,
